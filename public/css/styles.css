@@ -2,3 +2,28 @@
     background: linear-gradient(120deg ,#4c79d3 44.9%, #ffff 45%) no-repeat fixed;
     /* pra n ficar pixelado  44.9%, */
 }
+
+.text-login{
+    color: hsl(0, 0%, 100%);
+    font-size: 18px;
+    font-weight: 500;
+
+}
+.coins{
+    position: absolute;
+    bottom: 100px;
+}
+
+.button-login{
+    border-radius: 10px;
+    background-color: #4e0070 ;
+    color: white;
+    width: 50%;
+    margin: 0 25%;
+
+}
+
+.button-login:hover{
+    background-color: #4c79d3;
+
+}
