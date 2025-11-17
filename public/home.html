@@ -22,7 +22,7 @@
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img
-              src="/Nikel/assets/images/nikel-small-logo.png"
+              src="/assets/images/nikel-small-logo.png"
               alt="logo-nikel"
               class="img-fluid"
             />
@@ -42,7 +42,7 @@
             class="collapse navbar-collapse justify-content-end"
             id="navbarSupportedContent"
           >
-            <div class="d-flex jus">
+            <div class="d-flex menu">
               <a href="home.html"
                 ><button class="btn" type="button">
                   <i
@@ -64,8 +64,8 @@
                 >
                   <i class="bi bi-person-circle fs-4"></i>
                 </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" href="#">Logout</a></li>
+                <ul class="dropdown-menu logout" aria-labelledby="dropdownMenuButton1">
+                  <li><button class="dropdown-item" id="button-logout">Logout</button></li>
                 </ul>
               </div>
             </div>
@@ -78,12 +78,12 @@
         <div class="row">
           <div class="col d-flex mt-4 justify-content-start align-items-center">
             <i class="bi bi-cash-coin color-primary icon-detail"></i>
-            <span class="fs-2">$0,00</span>
+            <span class="fs-2" id="total">$0,00</span>
           </div>
           <div class="col d-flex mt-4 justify-content-end">
             <div class="text-center">
               <img
-                src="/Nikel/assets/images/coins-small.png"
+                src="/assets/images/coins-small.png"
                 alt="image-coins"
               />
             </div>
@@ -111,21 +111,17 @@
               </div>
               <div class="row">
                 <div class="col-6">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col">$1.000,00</div>
-                    </div>
+                  <div class="container p-0 " id="cash-in-list">
+                    
                   </div>
                 </div>
                 <div class="col-6">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col">$300,00</div>
-                    </div>
+                  <div class="container p-0" id="cash-out-list">
+                    
                   </div>
                 </div>
-                <div class="col-12">
-                  <button type="button " class="btn button-default">
+                <div class="col-12 mb-4">
+                  <button type="button " class="btn button-default " id="transactions-button">
                     See all
                   </button>
                 </div>
@@ -148,15 +144,15 @@
       
         <div class="mb-3">
           <label for="value-input" class="form-label">Value</label>
-          <input type="number" class="form-control" id="value-input" aria-describedby="emailHelp"/>
+          <input type="number" step="any" class="form-control" id="value-input" aria-describedby="emailHelp" required/>
         </div>
         <div class="mb-3">
-          <label for="description-input" class="form-label">Description</label>
-          <input type="text" class="form-control" id="description-input"/>
+          <label for="description-input" class="form-label" >Description</label>
+          <input type="text" class="form-control" id="description-input" required/>
         </div>
         <div class="mb-3">
           <label for="date-input" class="form-label">Date</label>
-          <input type="date" class="form-control" id="date-input"/>
+          <input type="date" class="form-control" id="date-input" required/>
         </div>
         <div class="mb-3">
           <div class="form-check form-check-inline">
@@ -187,5 +183,6 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/home.js"></script>
   </body>
 </html>
